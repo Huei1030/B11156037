@@ -18,28 +18,28 @@
         <script>
             $(document).ready(function () {
   // 捲軸偵測距離頂部超過 50 才顯示按鈕
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 50) {
-        if ($(".back-top").hasClass("hide")) {
-    $(".back-top").toggleClass("hide");
-    }
-    } else {
-    $(".back-top").addClass("hide");
-    }
-    });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 50) {
+            ($(".back-top").hasClass("hide")) {
+        $(".back-top").toggleClass("hide");
+        }
+        } else {
+        $(".back-top").addClass("hide");
+        }
+        });
 
   // 點擊按鈕回頂部
-    $(".back-top").on("click", function (event) {
-    $("html, body").animate(
-    {
+        $(".back-top").on("click", function (event) {
+        $("html, body").animate(
+        {
         scrollTop: 0
         },
       500 // 回頂部時間為 500 毫秒
-    );
-    });
-    });Copy
-        </script>
-        <style>
+        );
+        });
+        });Copy
+    </script>
+    <style>
             .back-top {
         z-index: 99999;
         position: fixed;
@@ -71,9 +71,15 @@
         filter: Alpha(opacity=0);
         transform: translateY(150%);
     }
+            .container{
+                text-align: center;
+            }
+            li{
+                list-style-type: none;
+            }
             img{
-                width: 80%;
-                height: 80%;
+                width: 30%;
+                height: 30%;
             }
             h2{
                 color: palevioletred;
@@ -159,30 +165,12 @@
             </div>
         </section>
 <body>
-    <div class="container">
-        <br>
-        <img src="/圖片/小婷6.png">
-        <h2>沈小婷</h2>
-        <p>（韓語：션샤오팅，日語：シェン・シャオティン；1999年11月12日—)，
-            出生於中國四川省成都市，中國大陸女歌手及舞者，所屬經紀公司為Top Class娛樂，
-            現為韓國女子偶像組合Kep1er成員。
-            <br>2020年，參加中國選秀節目《創造營2020》。
-            <br>2021年，赴韓參加選秀節目《Girls Planet 999》，最終以第九名成為限定女子團體Kep1er成員。
-            <br>2022年1月3日，正式出道活動，官方定位是主舞、門面。</p>
+<img src="/圖片/蠟筆小新.jpg">
+<h2>姓名：孫岱慧
+    <br>班級：資管一A
+    <br>剩下的沒什麼可以介紹啦~~~
+</h2>
 
-        <img src="/圖片/多娟.png">
-        <h2>金多娟</h2>
-        <p>（韓語：김다연／金多娟 Kim Da-Yeon，日語：キム・ダヨン；2003年03月02日—），韓國女歌手。
-            <br>2021年參加韓國女團選秀節目《Girls Planet 999》，最終以第四名的成績成為限定女子團體Kep1er成員。
-            <br>2022年1月3日，Kep1er正式出道活動，官方定位是主舞。</p>
-
-        <img src="/圖片/小光.png">
-        <h2>江崎光</h2>
-        <p>（日語：江崎 ひかる／えざき ひかる Ezaki Hikaru，韓語：에자키 히카루；2004年03月12日—），日本女歌手，
-            曾為團體+GANG成員之一。2021年赴韓參加女團選秀節目《Girls Planet 999》，為J組主題曲Center 
-            ，最終以第七名的成績成為限定女子團體Kep1er成員。
-            <br>2022年1月3日，Kep1er正式出道活動，官方定位是主舞、主Rapper。</p>
-    </div>
     <div class="back-top hide" title="回頂部"></div>
 </body>
 <script>

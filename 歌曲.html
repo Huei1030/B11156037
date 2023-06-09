@@ -18,28 +18,28 @@
         <script>
             $(document).ready(function () {
   // 捲軸偵測距離頂部超過 50 才顯示按鈕
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 50) {
-        if ($(".back-top").hasClass("hide")) {
-    $(".back-top").toggleClass("hide");
-    }
-    } else {
-    $(".back-top").addClass("hide");
-    }
-    });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 50) {
+            ($(".back-top").hasClass("hide")) {
+        $(".back-top").toggleClass("hide");
+        }
+        } else {
+        $(".back-top").addClass("hide");
+        }
+        });
 
   // 點擊按鈕回頂部
-    $(".back-top").on("click", function (event) {
-    $("html, body").animate(
-    {
+        $(".back-top").on("click", function (event) {
+        $("html, body").animate(
+        {
         scrollTop: 0
         },
       500 // 回頂部時間為 500 毫秒
-    );
-    });
-    });Copy
-        </script>
-        <style>
+        );
+        });
+        });Copy
+    </script>
+    <style>
             .back-top {
         z-index: 99999;
         position: fixed;
@@ -71,9 +71,15 @@
         filter: Alpha(opacity=0);
         transform: translateY(150%);
     }
+            .container{
+                text-align: center;
+            }
+            li{
+                list-style-type: none;
+            }
             img{
-                width: 80%;
-                height: 80%;
+                width: 30%;
+                height: 30%;
             }
             h2{
                 color: palevioletred;
@@ -161,27 +167,62 @@
 <body>
     <div class="container">
         <br>
-        <img src="/圖片/小婷6.png">
-        <h2>沈小婷</h2>
-        <p>（韓語：션샤오팅，日語：シェン・シャオティン；1999年11月12日—)，
-            出生於中國四川省成都市，中國大陸女歌手及舞者，所屬經紀公司為Top Class娛樂，
-            現為韓國女子偶像組合Kep1er成員。
-            <br>2020年，參加中國選秀節目《創造營2020》。
-            <br>2021年，赴韓參加選秀節目《Girls Planet 999》，最終以第九名成為限定女子團體Kep1er成員。
-            <br>2022年1月3日，正式出道活動，官方定位是主舞、門面。</p>
+        <img src="/圖片/專1.jpg">
+        <h2>《FIRST IMPACT》</h2>
+        <a href="https://youtu.be/n0j5NPptyM0">主打歌試聽</a>
+        <p>作為出道作品的首張韓語迷你專輯，由WAKE ONE娛樂及SWING娛樂製作、Stone Music娛樂發行。
+            <br>專輯內容歌曲:
+        </p>
+        <ul>
+            <li>See The Light</li>
+            <li>WA DA DA(主打歌)</li>
+            <li>MVSK</li>
+            <li>Shine</li>
+            <li>Another Dream</li>
+            <li>O.O.O</li>
+        </ul>
 
-        <img src="/圖片/多娟.png">
-        <h2>金多娟</h2>
-        <p>（韓語：김다연／金多娟 Kim Da-Yeon，日語：キム・ダヨン；2003年03月02日—），韓國女歌手。
-            <br>2021年參加韓國女團選秀節目《Girls Planet 999》，最終以第四名的成績成為限定女子團體Kep1er成員。
-            <br>2022年1月3日，Kep1er正式出道活動，官方定位是主舞。</p>
+        <img src="/圖片/專2.jpg">
+        <h2>《DOUBLAST》</h2>
+        <a href="https://youtu.be/hr-325mclek">主打歌試聽</a>
+        <p>是韓國女子團體Kep1er的第二張韓語迷你專輯，由WAKE ONE娛樂及SWING娛樂製作、Stone Music娛樂發行
+            <br>專輯內容歌曲:
+        </p>
+        <ul>
+            <li>Up!(主打歌)</li>
+            <li>LE VOYA9E</li>
+            <li>Attention</li>
+            <li>Good Night</li>
+            <li>Rewind/li>
+        </ul>
 
-        <img src="/圖片/小光.png">
-        <h2>江崎光</h2>
-        <p>（日語：江崎 ひかる／えざき ひかる Ezaki Hikaru，韓語：에자키 히카루；2004年03月12日—），日本女歌手，
-            曾為團體+GANG成員之一。2021年赴韓參加女團選秀節目《Girls Planet 999》，為J組主題曲Center 
-            ，最終以第七名的成績成為限定女子團體Kep1er成員。
-            <br>2022年1月3日，Kep1er正式出道活動，官方定位是主舞、主Rapper。</p>
+        <img src="/圖片/專3.jpg">
+        <h2>《TROUBLESHOOTER》</h2>
+        <a href="https://youtu.be/zkvIzKwzYNc">主打歌試聽</a>
+        <p>是韓國女子團體Kep1er的第三張韓語迷你專輯，由WAKE ONE娛樂及SWING娛樂製作，Stone Music娛樂發行，於2022年10月13日推出
+            <br>專輯內容歌曲:
+        </p>
+        <ul>
+            <li>We Fresh(主打歌)</li>
+            <li>Lion Tamer</li>
+            <li>Downtown</li>
+            <li>Dreams</li>
+            <li>The Girls (Can't turn me down)</li>
+        </ul>
+
+        <img src="/圖片/專4.jpg">
+        <h2>《LOVESTRUCK!》</h2>
+        <a href="https://youtu.be/w9ueRzymcU0">主打歌試聽</a>
+        <p>是韓國女子團體Kep1er的第四張韓語迷你專輯，由WAKE ONE娛樂及SWING娛樂製作，Stone Music娛樂發行，於2023年4月10日發行。
+            <br>專輯內容歌曲:
+        </p>
+        <ul>
+            <li>Giddy(主打歌)</li>
+            <li>LVLY</li>
+            <li>Back to the City</li>
+            <li>Why</li>
+            <li>Happy Ending</li>
+        </ul>
     </div>
     <div class="back-top hide" title="回頂部"></div>
 </body>
